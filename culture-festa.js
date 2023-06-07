@@ -62,44 +62,36 @@ function mkbox(data, index) {
 										<tr>
 											<td>제목</td>
 											<td id="title${index}">${data.TITLE}</td>
-											<td><button onclick="editField('title${index}')">수정</button></td>
 										</tr>
 										<tr>
 											<td>주소</td>
 											<td id="PLACE${index}">${data.PLACE}</td>
-											<td><button onclick="editField('PLACE${index}')">수정</button></td>
 										</tr>
 										<tr>
 											<td>위치</td>
 											<td id="GUNAME${index}">${data.GUNAME}</td>
-											<td><button onclick="editField('GUNAME${index}')">수정</button></td>
 										</tr>
 										<tr>
 											<td>기간</td>
 											<td id="DATE${index}">${data.DATE}</td>
-											<td><button onclick="editField('DATE')">수정</button></td>
 										</tr>
 										<tr>
 											<td>제한</td>
 											<td id="USE_TRGT${index}">${data.USE_TRGT}</td>
-											<td><button onclick="editField('USE_TRGT')">수정</button></td>
 										</tr>
 										<tr>
 											<td>종류</td>
 											<td id="CODENAME${index}">${data.CODENAME}</td>
-											<td><button onclick="editField('CODENAME${index}')">수정</button></td>
 										</tr>
 										<tr>
 											<td>이미지</td>
 											<td><img src="${data.MAIN_IMG}" id="image${index}" style="width:60px; height:60px;"></td>
-											<td><button onclick="editField('image${index}')">수정</button></td>
 										</tr>
 										<tr>
 											<td>홈페이지</td>
 											<td id="ORG_LINK${index}" style="font-size:9px">
 												${data.ORG_LINK}
 											</td>
-											<td><button onclick="editField('ORG_LINK${index}')">수정</button></td>
 										</tr>
 									</tbody>
 								</table>
@@ -151,17 +143,13 @@ async function deleteFesta(festa_NUM) {
     });
 }
 
-/* async function updateFesta(id) {
+/*
+  async function updateFesta(id) {
   const festa_idx = id.querySelector('.user_idx').innerText;
-
   const user_name = id.querySelector('.user_name').innerText;
-
   const user_id = id.querySelector('.user_id').innerText;
-
   const user_pw = id.querySelector('.user_pw').innerText;
-
   const user_email = id.querySelector('.user_email').innerText;
-
   const user_phone = id.querySelector('.user_phone').innerText;
 
   console.log(user_idx, user_name, user_id, user_pw, user_email, user_phone);
